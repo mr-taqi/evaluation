@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive web design</title>
+
+    <!-- Web 204 Sprint-3 evaluation -->
+
+    <script src="https://kit.fontawesome.com/b9d3c9efb7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shojumaru&family=ZCOOL+KuaiLe&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+            max-width: 1200px;
+            height: auto;
+        }
+
+        #box {
+            width: 90%;
+            margin: auto;
+            height: auto;
+            /* border: 1px solid red; */
+        }
+
+        #box>nav {
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        #box>nav>p {
+            margin: 10px;
+            font-size: x-large;
+            margin-left: 5%;
+            text-transform: capitalize;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 900;
+        }
+
+        #box>nav>p::first-letter {
+            color: #69bec0;
+        }
+
+        h4 {
+            text-align: center;
+            font-family: "Open Sans", sans-serif;
+            color: gray;
+            font-weight: 570;
+        }
+
+        #box>nav>i {
+            cursor: pointer;
+            margin: 10px;
+            margin-right: 5%;
+        }
+
+        #box>div>img {
+            width: 100%;
+        }
+
+        #box>footer {
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box>footer>h4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #box>div>div {
+            width: 45%;
+            height: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            background-color: #6bb7c0;
+            opacity: 0.8;
+            z-index: 1;
+        }
+
+        #pop_up>h1 {
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+            font-family: "Open Sans", sans-serif;
+            font-size: 3em;
+            font-weight: 100;
+            letter-spacing: 12px;
+        }
+
+        #pop_up>h3 {
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+            font-family: "Open Sans", sans-serif;
+            text-transform: capitalize;
+            font-weight: 600;
+            letter-spacing: 4px;
+            word-spacing: 20%;
+        }
+
+        @media screen and (max-width: 360px) {
+            #box {
+                width: auto;
+                margin: auto;
+                height: 720px;
+            }
+
+            #box>div>div{
+                width: 70%;
+                height: 20%;
+            }
+
+            #box>div {
+                width: auto;
+                height: 100%;
+            }
+
+            #box>div>img {
+                height: 700px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="box">
+            <nav>
+                <p>
+                    masai school
+                </p>
+                <i class="fa-solid fa-bars fa-xl" style="color: #69bec0;"></i>
+            </nav>
+
+            <div>
+                <div id="pop_up">
+                    <h1>
+                        Adventurous
+                    </h1>
+                    <h3>
+                        embark on new adventures
+                    </h3>
+                </div>
+                <img title="Resort" src=" https://assets.telegraphindia.com/telegraph/2024/Feb/1709121129_1704790914_maldives.jpg
+                " alt="" />
+            </div>
+
+            <footer>
+                <h4>
+                    <pre>All rights reserved </pre>
+                    <div>
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+
+                        <!-- added check_circle as the Circle-C Icon is avalable for paid kits only -->
+
+                    </div>
+                    <pre> 2023</pre>
+                </h4>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
